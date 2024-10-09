@@ -1,4 +1,3 @@
-# Lista de Estrutura Sequencial
 #### 1. Faça um Programa que mostre a mensagem (print) "Alo mundo" na tela.
 print('Alô mundo!')
 
