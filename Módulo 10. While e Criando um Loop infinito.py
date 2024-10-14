@@ -40,25 +40,21 @@ while len(nome) < 4:
     nome = input("Digite seu nome:")
 
 idade = int(input("Digite sua idade:"))
-
 while not (0 <= idade <= 150):
     print("A sua idade deve ter entre 0 a 150")
     idade = int(input("Digite sua idade:"))
 
 salario = float(input("Digite seu salário:")) 
-
-while salario > 0:
+while salario <= 0:
     print("O seu salário deve ser maior que 0")
     salario = float(input("Digite seu salário:"))
 
-sexo = input("Digite seu sexo, F = Feminino ou M = Masculino:")
-
-while not sexo in "f" or "m":
+sexo = input("Digite seu sexo, f = Feminino ou m = Masculino:")
+while not sexo in ['f', 'm']:
     print("Insira um gênero válido")
-    sexo = input("Digite seu sexo, F = Feminino ou M = Masculino:")
-
+    sexo = input("Digite seu sexo, f = Feminino ou m = Masculino:")
+    
 EC = input("Digite seu Estado Civil 's', 'c', 'v' ou 'd' :")
-
-while not EC in ["s", "c", "v", "d"]:
+while not EC in ['s', 'c', 'v', 'd']:
     print('Insira um estado civil válido')
     EC = input("Digite seu Estado Civil 's', 'c', 'v' ou 'd' :")
