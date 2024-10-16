@@ -44,3 +44,16 @@ for item in (niveis_co2):
         print('{} está com níveis altíssimos de CO2 ({}), chamar equipe especializada para verificar a região'.format(item, media))
     else:
         print('{} está na média'.format(item))
+
+## 1. Exercício \"menos prático\" para treinar manipulação de dicionário\n",
+#Dessa vez, vamos apenas treinar a manipulação de dicionário. Transforme as listas abaixo em 1 único dicionário no formato:
+#produto: [vendas2019, vendas2020]
+#produto2: [vendas2019, vendas2020]
+#produto3: [vendas2019, vendas2020]
+produtos = ['iphone', 'galaxy', 'ipad', 'tv', 'máquina de café', 'kindle', 'geladeira', 'adega', 'notebook dell', 'notebook hp', 'notebook asus', 'microsoft surface', 'webcam', 'caixa de som', 'microfone', 'câmera canon']
+vendas2019 = [558147,712350,573823,405252,718654,531580,973139,892292,422760,154753,887061,438508,237467,489705,328311,591120]
+vendas2020 = [951642,244295,26964,787604,867660,78830,710331,646016,694913,539704,324831,667179,295633,725316,644622,994303]
+
+lista = list(zip(vendas2019, vendas2020))
+dicionario = dict(zip(produtos, lista))
+print(dicionario)
