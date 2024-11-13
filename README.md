@@ -11,7 +11,7 @@ O curso tem no total 54 Módulos, sendo de Lógica de Progamação e indo até c
 
 Vou mostrar alguns Módulos, nos quais acho que será de mais importância alinhado em algumas áreas que tenho interesse.
 
-3 - Lógica de Programação
+3 - Lógica de Programação \n
 9 - For - Estrutura de Repetição
 14 - Criando suas funções em Python
 17 - Módulos, Bibliotecas e Introdução à Orientação a Objeto
