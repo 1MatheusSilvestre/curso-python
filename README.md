@@ -18,13 +18,21 @@ Vou mostrar alguns Módulos, nos quais acho que será de mais importância alinh
 14 - Criando suas funções em Python
 
 17 - Módulos, Bibliotecas e Introdução à Orientação a Objeto
+
 21 - Numpy - a base de Python para Análise de Dados
+
 22 - Análise de Dados com o Pandas + Integração Python e Excel
+
 28 - Integração Python - SQL
+
 29 - Integração Python - Automação Web (Web-Scraping com Selenium)
+
 33 - Integração Python com APIs e JSON
+
 40 - Automação Web - Aplicação de Mercado de Trabalho
+
 41 - Ciência de Dados - Aplicação de Mercado de Trabalho
+
 43 - Desenvolvimento Web com Python - Flask e Django
 # Andamento do Curso
 Conforme vou avançando e fazendo exercícios e projetos do curso irei atualizando esse repositório.
