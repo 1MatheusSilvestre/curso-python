@@ -103,3 +103,37 @@ for item in informacoes:
     texto += f'{nome}, Cargo: {cargo}\n'
 
 print(texto)
+
+
+# para pegar o dicionario do vimeo, use:
+from dic import dicionario_vimeo
+
+import pprint
+
+informacoes = dicionario_vimeo["data"]
+videos = []
+for item in informacoes:
+    video_uri = item["uri"]
+    nome = item["name"]
+    duracao = item["duration"]
+
+
+    link_540p = ""
+    link_720p = ""
+    link_1080p = ""
+    lista_downloads = item["download"]
+    for dicionario_download in lista_downloads:
+        if dicionario_download["rendition"] == "540p":
+            link_540p = dicionario_download["link"]
+        if dicionario_download["rendition"] == "720p":
+            link_720p = dicionario_download["link"]
+        if dicionario_download["rendition"] == "1080p":
+            link_1080p = dicionario_download["link"]
+    
+    dic_item = {'uri': video_uri, 'nome': nome, 'duracao': duracao, 'link540p': link_540p, 'link720p': link_720p, 'link1080p': link_1080p}
+    videos.append(dic_item)
+pprint.pprint(videos)
+
+# você precisa chegar em:
+# videos = [
+#     {'uri': video_uri, 'nome': nome_video, 'duracao': duracao, 'link540p': link540p, 'link720p': link720p, 'link1080p': link1080p},
