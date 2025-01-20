@@ -17,3 +17,39 @@
 #print(Counter(['a', 'b', 'a', 'c', 'b', 'a']))
 #print(Counter('abacba'))
 
+def analisar_texto(texto):
+    """
+    Analisa um texto fornecido e retorna a contagem de palavras, a frequência de palavras e a frequência de letras.
+
+    Parameters
+    ---------
+    texto : str
+        O texto a ser analisado.
+
+    Returns
+    --------
+    Tuple
+        uma tupla contendo a contagem de palavras, a frequência de palavras e a frequência de letras.
+    """
+    #remove a pontuação
+    tratamento = str.maketrans('', '', string.punctuation)
+    #aplica o metódo anterior para deixar sem pontuação
+    texto_tratado = texto.translate(tratamento)
+    #divide em palavras, criando uma lista de palavras 
+    palavras = texto_tratado.split()
+    #conta o total de palavras 
+    contagem = len(palavras)
+    #cria um contador de cada palavra
+    frequencia_palavras = Counter(palavras)
+    #cria um contador de cada letra  e deixa tudo minusculo 
+    frequencia_letras = Counter(texto_tratado.lower())
+
+    return contagem, frequencia_palavras, frequencia_letras
+
+
+texto = "Olá mundo! Este é um teste. Olá novamente."
+contagem, frequencia_palavras, frequencia_letras = analisar_texto(texto)
+
+print(f"Contagem de palavras: {contagem}")
+print(f"Frequência de palavras: {frequencia_palavras}")
+print(f"Frequência de letras: {frequencia_letras}")
