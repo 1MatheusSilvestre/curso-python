@@ -54,3 +54,25 @@ limite_inferior = media - 2 * desvio_padrao
 anomalias = [x for x in tempos_ciclo if (x > limite_superior or x < limite_inferior)]
 
 print(anomalias)
+
+#Exercicio 6
+#Você é um gerente de vendas e tem os dados de vendas de três produtos diferentes (Produto A, Produto B, Produto C) para os últimos 5 dias em um array 2D NumPy. Cada linha do array representa um produto e cada coluna representa um dia. 
+#Seu trabalho é calcular as vendas totais para cada produto e para cada dia.
+#Use o seguinte array para sua análise:
+
+vendas = np.array([[50, 60, 70, 65, 80],
+                   [85, 90, 78, 92, 88],
+                   [72, 75, 68, 77, 76]])
+
+produtoA = np.sum(vendas[0])
+produtoB = np.sum(vendas[1])
+produtoC = np.sum(vendas[2])
+
+vendas_dia = np.sum(vendas, axis=0)
+
+for i in range(5):
+    print(f'Vendas do dia {i+1}: {vendas_dia[i]}')
+
+print(f'Vendas do produto A: {produtoA}')
+print(f'Vendas do produto B: {produtoB}')
+print(f'Vendas do produto C: {produtoC}')
