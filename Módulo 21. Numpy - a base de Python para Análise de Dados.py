@@ -27,7 +27,7 @@ precos = np.array([100, 200, 50])
 
 print(np.dot(quantidades, precos))
 
-#Exercício
+#Exercício 4
 #Você é um analista de RH e tem os salários de todos os funcionários da sua empresa em um array NumPy. 
 #Seu trabalho é identificar quantos funcionários ganham acima da média. Use o seguinte array para sua análise: salarios = np.array([3000, 2500, 3500, 4000, 2000, 4500, 3000, 3800, 4800]).
 salarios = np.array([3000, 2500, 3500, 4000, 2000, 4500, 3000, 3800, 4800])
@@ -38,3 +38,19 @@ media = np.mean(salarios)
 acima_media = np.where(salarios[salarios > media])
 
 print(f'Existem {len(salarios[salarios > media])} funcionários que ganham acima da média. Sendo a média: R$ {media:.1f} e seus respectivos salários: {acima_media}')
+
+#Exercício 5 
+#Você é um engenheiro de produção e tem os tempos de ciclo (em minutos) de uma linha de produção em um array NumPy. Seu trabalho é identificar quaisquer tempos de ciclo que estão dois desvios padrão acima ou abaixo da média. 
+#Use o seguinte array para sua análise: tempos_ciclo = np.array([5.5, 5.7, 5.9, 6.0, 5.8, 5.6, 5.7, 7.2, 4.8]).
+
+tempos_ciclo = np.array([5.5, 5.7, 5.9, 6.0, 5.8, 5.6, 5.7, 7.2, 4.8])
+media = np.mean(tempos_ciclo) 
+
+desvio_padrao = np.std(tempos_ciclo) 
+
+limite_superior = media + 2 * desvio_padrao
+limite_inferior = media - 2 * desvio_padrao
+
+anomalias = [x for x in tempos_ciclo if (x > limite_superior or x < limite_inferior)]
+
+print(anomalias)
