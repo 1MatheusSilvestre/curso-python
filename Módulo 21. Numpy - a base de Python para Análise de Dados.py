@@ -26,3 +26,15 @@ quantidades = np.array([5, 3, 2])
 precos = np.array([100, 200, 50])
 
 print(np.dot(quantidades, precos))
+
+#Exercício
+#Você é um analista de RH e tem os salários de todos os funcionários da sua empresa em um array NumPy. 
+#Seu trabalho é identificar quantos funcionários ganham acima da média. Use o seguinte array para sua análise: salarios = np.array([3000, 2500, 3500, 4000, 2000, 4500, 3000, 3800, 4800]).
+salarios = np.array([3000, 2500, 3500, 4000, 2000, 4500, 3000, 3800, 4800])
+
+media = np.mean(salarios)
+#print(media)
+
+acima_media = np.where(salarios[salarios > media])
+
+print(f'Existem {len(salarios[salarios > media])} funcionários que ganham acima da média. Sendo a média: R$ {media:.1f} e seus respectivos salários: {acima_media}')
