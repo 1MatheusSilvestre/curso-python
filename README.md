@@ -11,8 +11,11 @@ O curso tem no total 54 Módulos, sendo de Lógica de Progamação e indo até c
 
 Vou mostrar alguns Módulos, nos quais acho que será de mais importância alinhado em algumas áreas que tenho interesse.
 
-3 - Lógica de Programação                                                                                                                              
-9 - For - Estrutura de Repetição                                                                                                                          
+3 - Lógica de Programação
+6. If - Condições em Python
+8. Listas Python - Métodos e Usos
+9 - For - Estrutura de Repetição  
+10. While e Criando um Loop infinito
 14 - Criando suas funções em Python                                                                                                                          
 17 - Módulos, Bibliotecas e Introdução à Orientação a Objeto                                                                                                                          
 21 - Numpy - a base de Python para Análise de Dados                                                                                                                          
@@ -20,8 +23,9 @@ Vou mostrar alguns Módulos, nos quais acho que será de mais importância alinh
 28 - Integração Python - SQL                                                                                                                          
 29 - Integração Python - Automação Web (Web-Scraping com Selenium)                                                                                                                          
 33 - Integração Python com APIs e JSON                                                                                                                          
-40 - Automação Web - Aplicação de Mercado de Trabalho                                                                                                                          
-41 - Ciência de Dados - Aplicação de Mercado de Trabalho                                                                                                                          
-43 - Desenvolvimento Web com Python - Flask e Django 
+40 - Automação Web - Aplicação de Mercado de Trabalho
+42. Orientação a Objetos Completo - Classes e Métodos
+43 - Desenvolvimento Web com Python - Flask e Django
+47. GitHub para Organização dos Projetos
 # Andamento do Curso
 Conforme vou avançando e fazendo exercícios e projetos do curso irei atualizando esse repositório.
